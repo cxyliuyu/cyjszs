@@ -1,0 +1,25 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="80dp"
+    android:orientation="vertical" 
+    android:background="@+drawable/where">
+
+    <TextView
+        android:id="@+id/UserLocation_item_userId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+         android:textSize="18dip"/>
+
+    <TextView
+        android:id="@+id/UserLocation_item_userName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="25dip" />
+
+    <TextView
+        android:id="@+id/UserLocation_item_distance"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:textSize="18dip"/>
+
+</LinearLayout>
