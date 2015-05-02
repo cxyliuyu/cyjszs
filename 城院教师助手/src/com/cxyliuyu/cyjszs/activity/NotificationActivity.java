@@ -11,7 +11,6 @@ import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.os.Environment;
-import android.util.Log;
 import android.view.ContextMenu;
 import android.view.ContextMenu.ContextMenuInfo;
 import android.view.Menu;
@@ -82,7 +81,7 @@ public class NotificationActivity extends Activity {
 			// TODO 自动生成的方法存根
 			List<PushNotificationValue> pushNotifications = new ArrayList<PushNotificationValue>();
 
-			Log.i("notification", "测试建表是否成功");
+			//Log.i("notification", "测试建表是否成功");
 			NotificationDBManager notificationDBManager = new NotificationDBManager(
 					NotificationActivity.this);
 			pushNotifications = notificationDBManager.query();
@@ -185,14 +184,14 @@ public class NotificationActivity extends Activity {
 										mContext, downloadTask));
 				DownloadTaskManager.getInstance(mContext)
 						.startDownload(downloadTask);
+				/*
 				Log.i("cyjszs","断点0");
 				Intent i = new Intent(NotificationActivity.this, DownloadListActivity.class);
 				Log.i("cyjszs","断点1");
 				i.putExtra(DownloadListActivity.DOWNLOADED, false);
 				Log.i("cyjszs","断点2");
 				startActivity(i);
-				Log.i("cyjszs","断点3");
-
+				Log.i("cyjszs","断点3");*/
 			}
 
 		}

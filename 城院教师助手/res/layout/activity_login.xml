@@ -6,7 +6,8 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context=".LoginActivity" >
+    tools:context=".LoginActivity" 
+    android:background="@+drawable/login_backg">
 
      <TextView
          android:id="@+id/tv_login_welcome"
@@ -16,24 +17,33 @@
          android:layout_alignParentTop="true"
          android:layout_marginTop="29dp"
          android:text="欢迎来到城院教师助手"
+            
          android:textAppearance="?android:attr/textAppearanceMedium" />
 
-     <ImageButton
+     <Button
          android:id="@+id/imgBtn_login_submit"
          android:layout_width="match_parent"
          android:layout_height="wrap_content"
          android:layout_alignParentLeft="true"
          android:layout_below="@+id/edtTxt_login_userId"
          android:layout_marginTop="98dp"
-         android:src="@android:drawable/btn_star" />
+         android:background="@drawable/shape"
+         android:text="登录" 
+         android:layout_marginLeft="12dp"
+         android:layout_marginRight="12dp"
+         android:textSize="18dp" />
 
-     <ImageButton
+     <Button
          android:id="@+id/imgBtn_login_cancel"
          android:layout_width="match_parent"
          android:layout_height="wrap_content"
-         android:layout_alignParentLeft="true"
          android:layout_below="@+id/imgBtn_login_submit"
-         android:src="@drawable/ic_launcher" />
+         android:layout_marginTop="29dp"
+          android:layout_marginLeft="12dp"
+           android:layout_marginRight="12dp"
+         android:background="@drawable/shape2"
+         android:text="取消"
+         android:textSize="18dp" />
 
      <EditText
          android:id="@+id/edtTxt_login_userId"
@@ -43,7 +53,11 @@
          android:layout_below="@+id/tv_login_welcome"
          android:layout_marginTop="22dp"
          android:ems="10"
-         android:inputType="text" />
+         android:inputType="text"
+         android:background="@drawable/shape1"
+         android:layout_marginLeft="12dp"
+           android:layout_marginRight="12dp"
+         android:hint="帐号" />
 
      <EditText
          android:id="@+id/edtTxt_login_password"
@@ -53,6 +67,10 @@
          android:layout_below="@+id/edtTxt_login_userId"
          android:layout_marginTop="22dp"
          android:ems="10"
-         android:inputType="textPassword" />
+         android:inputType="textPassword"
+          android:background="@drawable/shape1"
+          android:layout_marginLeft="12dp"
+           android:layout_marginRight="12dp"
+         android:hint="密码" />
 
 </RelativeLayout>

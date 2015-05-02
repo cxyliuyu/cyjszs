@@ -1,6 +1,5 @@
 package com.cxyliuyu.cyjszs.value;
 
-import android.util.Log;
 
 public class JiankaotiaoValue {
 	public int id = 0;

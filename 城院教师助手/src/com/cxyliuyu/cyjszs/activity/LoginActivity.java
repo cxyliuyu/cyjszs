@@ -7,8 +7,9 @@ import android.content.IntentFilter;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.View;
+import android.view.Window;
+import android.widget.Button;
 import android.widget.EditText;
-import android.widget.ImageButton;
 import android.widget.Toast;
 import cn.jpush.android.api.InstrumentedActivity;
 
@@ -21,17 +22,18 @@ public class LoginActivity extends InstrumentedActivity {
 
 	EditText edtTxt_userId;
 	EditText edtTxt_password;
-	ImageButton imgBtn_submit;
-	ImageButton imgBtn_cancel;
+	Button imgBtn_submit;
+	Button imgBtn_cancel;
 	LoginBroadcastReceiver receiver = new LoginBroadcastReceiver();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.activity_login);
         edtTxt_userId = (EditText) findViewById(R.id.edtTxt_login_userId);
         edtTxt_password = (EditText) findViewById(R.id.edtTxt_login_password);
-        imgBtn_submit = (ImageButton) findViewById(R.id.imgBtn_login_submit);
-        imgBtn_cancel = (ImageButton) findViewById(R.id.imgBtn_login_cancel);
+        imgBtn_submit = (Button) findViewById(R.id.imgBtn_login_submit);
+        imgBtn_cancel = (Button) findViewById(R.id.imgBtn_login_cancel);
         
         //检测用户是否已经登录，如果已经登录，直接跳转到用户主界面，否则什么也不做
         Boolean isLogged = MyTools.isLogged(LoginActivity.this);
@@ -108,4 +110,19 @@ public class LoginActivity extends InstrumentedActivity {
 		}
     	
     }
+	@Override
+	protected void onPause() {
+		// TODO Auto-generated method stub
+		super.onPause();
+	}
+
+
+	@Override
+	protected void onResume() {
+		// TODO Auto-generated method stub
+		super.onResume();
+	}
+    
+
+
 }

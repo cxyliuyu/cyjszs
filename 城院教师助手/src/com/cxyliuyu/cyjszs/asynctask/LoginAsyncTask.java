@@ -18,14 +18,13 @@ import android.os.AsyncTask;
 import android.os.Handler;
 import android.util.Log;
 import android.widget.Toast;
-
 import cn.jpush.android.api.JPushInterface;
 import cn.jpush.android.api.TagAliasCallback;
 
+import com.cxyliuyu.cyjszs.R;
 import com.cxyliuyu.cyjszs.activity.MainActivity;
 import com.cxyliuyu.cyjszs.alarmManager.UpdateJiankaotiaoAlarmManager;
 import com.cxyliuyu.cyjszs.httpclient.MyHttpClient;
-import com.cxyliuyu.cyjszs.R;
 
 public class LoginAsyncTask extends AsyncTask<Object,Integer,String>{
 	private Context context = null;

@@ -1,44 +1,46 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    xmlns:hyman="http://schemas.android.com/apk/res/com.cxyliuyu.cyjszs"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/ch"
+    android:orientation="vertical"
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context=".MainActivity" >
 
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="登录成功，这里是系统主界面" />
+    <com.example.view.button.view.SlidingMenu
+        android:id="@+id/id_menu"
+          android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+        hyman:rightPadding="120dp" >
 
-    <Button
-        android:id="@+id/btn_main_jiankaotiao"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/textView2"
-        android:layout_below="@+id/textView2"
-        android:layout_marginTop="16dp"
-        android:text="查看我的监考条" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:orientation="horizontal" >
 
-    <Button
-        android:id="@+id/btn_main_tonotification"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/textView2"
-        android:layout_below="@+id/textView2"
-        android:layout_marginTop="83dp"
-        android:text="查看通知" />
+            <include layout="@layout/listmenu" />
 
-    <Button
-        android:id="@+id/btn_main_test"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/btn_main_tonotification"
-        android:layout_below="@+id/btn_main_tonotification"
-        android:layout_marginTop="16dp"
-        android:text="测试功能" />
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@drawable/welcome1" >
 
-</RelativeLayout>
+              <ImageButton android:background="#00000000" 
+                  android:layout_height="wrap_content" 
+                  android:layout_width="wrap_content" 
+                  android:id="@+id/person" 
+                  android:src="@drawable/personal" 
+             android:layout_marginLeft="5.dp"
+              android:layout_marginTop="5.dp" 
+              android:onClick="toggleMenu"/>
+              
+            
+            </LinearLayout>
+        </LinearLayout>
+    </com.example.view.button.view.SlidingMenu>
+
+</LinearLayout>

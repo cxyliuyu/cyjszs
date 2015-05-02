@@ -22,7 +22,7 @@ public class JiankaotiaoDBManager {
 		try{
 			for(JiankaotiaoValue jiankaotiao :jiankaotiaos){
 				db.execSQL("INSERT INTO jiankaotiao values(?,?,?,?,?,?)",new Object[]{jiankaotiao.id,jiankaotiao.fuser_name,jiankaotiao.course,jiankaotiao.test_time,jiankaotiao.classroom,jiankaotiao.fuser_id});
-				Log.i("jiankaotiao",jiankaotiao.id+jiankaotiao.fuser_name);
+				//Log.i("jiankaotiao",jiankaotiao.id+jiankaotiao.fuser_name);
 			}
 			db.setTransactionSuccessful();
 		}finally{

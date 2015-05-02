@@ -1,14 +1,12 @@
 package com.cxyliuyu.cyjszs.SQL;
 
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.Iterator;
 import java.util.List;
 
 import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
-import android.util.Log;
 
 import com.cxyliuyu.cyjszs.value.PushNotificationValue;
 
@@ -71,5 +69,9 @@ public class NotificationDBManager {
 	public void delete(PushNotificationValue pnv){
 		int id =pnv.get_id();
 		db.execSQL("delete from pushNotifications where _id="+id);
+	}
+	
+	public void deleteAll(){
+		db.execSQL("delete from pushNotifications");
 	}
 }

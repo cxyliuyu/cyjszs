@@ -15,10 +15,10 @@ import android.os.AsyncTask;
 import android.util.Log;
 import android.widget.Toast;
 
+import com.cxyliuyu.cyjszs.R;
 import com.cxyliuyu.cyjszs.SQL.JiankaotiaoDBManager;
 import com.cxyliuyu.cyjszs.alarmManager.JiankaotiaoAlarmManager;
 import com.cxyliuyu.cyjszs.httpclient.MyHttpClient;
-import com.cxyliuyu.cyjszs.R;
 import com.cxyliuyu.cyjszs.tools.MyTools;
 import com.cxyliuyu.cyjszs.value.JiankaotiaoValue;
 

@@ -1,11 +1,11 @@
 package com.cxyliuyu.cyjszs.broadcastReceiver;
 
-import com.cxyliuyu.cyjszs.asynctask.JiankaotiaoAsyncTask;
-
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
 import android.util.Log;
+
+import com.cxyliuyu.cyjszs.asynctask.JiankaotiaoAsyncTask;
 
 public class UpdateJiankaotiaoAlarmReceiver extends BroadcastReceiver{
 

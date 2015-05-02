@@ -10,5 +10,10 @@
     <string name="title_activity_jiankaotiao">JiankaotiaoActivity</string>
     <string name="title_activity_notification">NotificationActivity</string>
     <string name="title_activity_download">DownloadActivity</string>
+    <string name="title_activity_look_around">LookAroundActivity</string>
+    <string name="title_activity_chat">ChatActivity</string>
+    <string name="title_activity_friends">FriendsActivity</string>
+    <string name="title_activity_welcome">Welcome</string>
+    <string name="title_activity_tq">TqActivity</string>
 
 </resources>

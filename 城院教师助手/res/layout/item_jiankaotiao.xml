@@ -1,14 +1,15 @@
 <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:background="#dc143c" >
+    
+    android:background="@+drawable/jkt">
     
     <TableRow >
         <TextView
             android:id="@+id/jiankaotiao_item_id"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="30dip" />
+            android:textSize="32dip" />
         
     </TableRow>
 
@@ -18,13 +19,13 @@
             android:id="@+id/jiankaotiao_item_fuser_name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="15dip" />
+            android:textSize="18dip" />
 
         <TextView
             android:id="@+id/jiankaotiao_item_course"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="15dip" />
+            android:textSize="18dip" />
     </TableRow>
 
     <TableRow>
@@ -33,26 +34,26 @@
             android:id="@+id/jiankaotiao_item_classroom"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="15dip" />
+            android:textSize="18dip" />
 
         <TextView
             android:id="@+id/jiankaotiao_item_fuser_id"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="15dip" />
+            android:textSize="18dip" />
     </TableRow>
     <TableRow >
         <TextView
             android:id="@+id/jiankaotiao_item_null"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="15dip"
+            android:textSize="18dip"
             android:text="考试时间： " />
         <TextView
             android:id="@+id/jiankaotiao_item_test_time"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="15dip" />
+            android:textSize="18dip" />
     </TableRow>
 
 </TableLayout>
